@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fd20c1c790c0b0744b26fe7abac0e986
+guid: cd15bbeee3f7ddf4f9a3c276e8dfd3df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3978989972443357898
-    second: 1_wall_0
+      213: -8488459529517881799
+    second: handrails_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_wall_0
+      name: handrails_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 11
         y: 0
-        width: 1024
+        width: 1502
         height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac2e3506c46383730800000000000000
-      internalID: 3978989972443357898
+      spriteID: 936aecc180fe23a80800000000000000
+      internalID: -8488459529517881799
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1_wall_0: 3978989972443357898
+      handrails_0: -8488459529517881799
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
