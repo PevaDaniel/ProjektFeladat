@@ -1,0 +1,3 @@
+repository "ProjektFeladat/ProjektFeladat@7971568822210@cloud"
+  path "/"
+    smartbranch "/main/MainMenu&Lobby"
