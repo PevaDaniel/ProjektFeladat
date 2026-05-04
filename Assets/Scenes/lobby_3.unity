@@ -1922,6 +1922,8 @@ GameObject:
   - component: {fileID: 695865049}
   - component: {fileID: 695865048}
   - component: {fileID: 695865047}
+  - component: {fileID: 695865051}
+  - component: {fileID: 695865050}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2003,6 +2005,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &695865050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695865046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138241eb97ce6e948afb4176c17c8e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
+  offset: {x: 0, y: 0, z: -10}
+  player: {fileID: 1178455005}
+--- !u!114 &695865051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695865046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &769767981
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,6 +2483,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MapChange
   Building_4: {fileID: 0}
   Building_10: {fileID: 0}
+  Building_1: {fileID: 278222791}
+  Building_4_floor1: {fileID: 1669478685}
+  Building_4_floor3: {fileID: 0}
 --- !u!60 &1178455000
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2519,12 +2582,10 @@ MonoBehaviour:
   Border1_x: 13
   Border1_y1: -2
   Border1_y2: 24
-  Border4_x1: 86
-  Border4_x2: 113
-  Border4_y1: 27
-  Border4_y2: 27
-  Building1: 1
-  Building2: 0
+  Border2_x1: -11.5
+  Border2_x2: 13.7
+  Border2_y1: -36
+  Border2_y2: 17
 --- !u!114 &1178455003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2669,7 +2730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3. emelet
+  m_text: 1. emelet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3693,7 +3754,7 @@ GameObject:
   - component: {fileID: 1669478688}
   - component: {fileID: 1669478687}
   m_Layer: 0
-  m_Name: Building_4(floor 3)
+  m_Name: Building_4(floor 1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

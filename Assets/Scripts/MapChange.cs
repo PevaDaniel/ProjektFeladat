@@ -7,6 +7,7 @@ public class MapChange : MonoBehaviour
     public GameObject Building_4;
     public GameObject Building_10;
     public GameObject Building_1;
+    public GameObject Building_4_floor1;
     public GameObject Building_4_floor3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -33,6 +34,10 @@ public class MapChange : MonoBehaviour
         if(collision.gameObject == Building_1)
         {
             SceneManager.LoadScene("lobby");
+        }
+        if(collision.gameObject == Building_4_floor1)
+        {
+            SceneManager.LoadScene("lobby_2");
         }
         if(collision.gameObject == Building_4_floor3)
         {
