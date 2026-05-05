@@ -5720,6 +5720,7 @@ MonoBehaviour:
   Building_4: {fileID: 0}
   Building_10: {fileID: 0}
   Building_1: {fileID: 562751847}
+  Building_4_floor1: {fileID: 0}
   Building_4_floor3: {fileID: 1186216128}
 --- !u!60 &2018834909
 PolygonCollider2D:
@@ -5759,7 +5760,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5555556, y: 0}
-    oldSize: {x: 0.18, y: 0.41}
+    oldSize: {x: 0.72, y: 1.64}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5903,7 +5904,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.67, y: 14.57, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

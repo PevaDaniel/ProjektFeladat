@@ -77,7 +77,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2171256235218125317}
-  - {fileID: 4279797835963309884}
+  - {fileID: 5053396880350122727}
   m_Father: {fileID: 1253708266922405427}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1839735485 &8789126730227039087
@@ -94,7 +94,7 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 8
       m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 3
+      m_TileMatrixIndex: 8
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -291,7 +291,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 4
+  - m_RefCount: 3
     m_Data:
       e00: 1
       e01: 0
@@ -348,11 +348,11 @@ Tilemap:
   - m_RefCount: 1
     m_Data:
       e00: 0.000000059604645
-      e01: 0.99999994
+      e01: 2.9999998
       e02: 0
       e03: -0.5
       e10: -0.99999994
-      e11: 0.000000059604645
+      e11: 0.00000017881393
       e12: 0
       e13: 0.5
       e20: 0
@@ -373,6 +373,24 @@ Tilemap:
       e11: 1
       e12: 0
       e13: -0.5
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  - m_RefCount: 1
+    m_Data:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 3
+      e12: 0
+      e13: 0
       e20: 0
       e21: 0
       e22: 1
@@ -464,7 +482,7 @@ TilemapRenderer:
   m_SortOrder: 0
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
---- !u!1001 &6210851649551622193
+--- !u!1001 &3131339226678717930
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -529,10 +547,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: c6f9da54fedcc444f854d33ffce3b439, type: 3}
---- !u!4 &4279797835963309884 stripped
+--- !u!4 &5053396880350122727 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: c6f9da54fedcc444f854d33ffce3b439, type: 3}
-  m_PrefabInstance: {fileID: 6210851649551622193}
+  m_PrefabInstance: {fileID: 3131339226678717930}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8319379780759665928
 PrefabInstance:
@@ -604,7 +622,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: c6f9da54fedcc444f854d33ffce3b439, type: 3}
   m_PrefabInstance: {fileID: 8319379780759665928}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7131617960827819201
+--- !u!114 &1189368071520233651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
