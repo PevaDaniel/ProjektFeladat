@@ -3,28 +3,53 @@ using UnityEngine;
 public class GeneralMovement : MonoBehaviour
 {
     Rigidbody2D rb;
-    public float JumpForce = 2.0f;
+    Animator anim;
+
     public float speed = 5f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float jumpForce = 5f;
+
+    float move;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space)) {
-            rb.AddForce(Vector3.up * JumpForce * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.A))
+        move = Input.GetAxisRaw("Horizontal");
+
+        rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
+
+        anim.SetFloat("sped", Mathf.Abs(move));
+
+        if (move < 0)
         {
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
+            anim.SetInteger("dir", 0);
         }
-        if(Input.GetKey(KeyCode.D))
+        else if (move > 0)
         {
-            transform.Translate(Vector3.right * speed * Time.deltaTime);
+            anim.SetInteger("dir", 1);
         }
         
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }        
+    }
+
+    void Jump()
+    {
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+
+        if (anim.GetInteger("dir") == 1)
+        {
+            anim.SetTrigger("jump_right");
+        }
+        else
+        {
+            anim.SetTrigger("jump_left");
+        }
     }
 }
