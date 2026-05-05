@@ -12697,6 +12697,7 @@ MonoBehaviour:
   Building_4: {fileID: 788006492}
   Building_10: {fileID: 1166181572}
   Building_1: {fileID: 0}
+  Building_4_floor1: {fileID: 0}
   Building_4_floor3: {fileID: 0}
 --- !u!60 &2004272583
 PolygonCollider2D:
