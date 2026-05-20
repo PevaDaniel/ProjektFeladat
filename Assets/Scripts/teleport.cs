@@ -20,7 +20,7 @@ public class teleport : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             // 1. A Játékos (collision.gameObject) pozíciójának átállítása a 10, 10 pontra
-            collision.gameObject.transform.position = new Vector3(-8f, -2.3f, 0f);
+            collision.gameObject.transform.position = new Vector3(-0.69f, -2.25f, 0f);
 
             // 2. Lekérjük a Játékos fizikai komponensét, és lenullázzuk a zuhanást/mozgást
             Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
