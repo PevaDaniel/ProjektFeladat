@@ -20,7 +20,8 @@ public class key : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             targetDoor.hasKey = true;
-            Destroy(gameObject);
+            collision.gameObject.transform.position = new Vector3(-0.69f, -2.25f, 0f);
+            
         }
     }
 }

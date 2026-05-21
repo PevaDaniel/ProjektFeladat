@@ -6,7 +6,7 @@ public class Spawner_Ball : MonoBehaviour
     public door1 sok;
     public GameObject greenBallPrefab;
     public GameObject redBallPrefab;
-    public float greenBallChance = 60f;
+    public float greenBallChance = 40f;
     public float spawnRate = 0.7f;
     public float minX = 76.5f;
     public float maxX = 95.5f;
@@ -55,16 +55,14 @@ public class Spawner_Ball : MonoBehaviour
 
     IEnumerator StopSpawningAfterTime()
     {
-        yield return new WaitForSeconds(300f); // 10 másodperc teszteléshez
+        yield return new WaitForSeconds(30f);
 
-        // SZÓLUNK A SCOREMANAGERNEK, HOGY LETELT AZ IDŐ!
         if (ScoreManager.instance != null)
         {
             ScoreManager.instance.TimeIsUp();
         }
     }
 
-    // === ITT VAN A FÜGGVÉNY, AMIT A SCOREMANAGER KERES ===
     public void StopSpawning()
     {
         isTimeUp = true;
