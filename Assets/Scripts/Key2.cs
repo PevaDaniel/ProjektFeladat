@@ -6,16 +6,16 @@ public class Key2 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // 1. Automatikusan megkeresi a door2-t a pályán (nem kell behúzni semmit!)
             door2 masodikAjto = FindAnyObjectByType<door2>();
+            door1 elsoAjto = FindAnyObjectByType<door1>();
 
-            // 2. Ha megvan, nyomtalanul kitörli a pályáról az ajtót
             if (masodikAjto != null)
             {
+                collision.gameObject.transform.position = new Vector3(98.66f, -13.2f, 0f);
                 Destroy(masodikAjto.gameObject);
+                Destroy(elsoAjto.gameObject);
             }
 
-            // 3. A kulcs is megsemmisül, mert felvettük
             Destroy(gameObject);
         }
     }
